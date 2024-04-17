@@ -13,8 +13,6 @@ From [PortfolioProject]..CovidDeaths$
 Where continent is not null 
 Order by 3,4
 
--- Select Data that we are going to be starting with
-
 --Initial Data Selection:
 --Retrieves specific columns (Location, date, total_cases, new_cases, total_deaths, population) from the CovidDeaths table, focusing on entries where the continent information is available. Results are sorted by location and date.
 
