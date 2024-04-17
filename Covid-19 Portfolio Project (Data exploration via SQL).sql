@@ -40,7 +40,6 @@ From [PortfolioProject]..CovidDeaths$
 --Where location like '%India%'
 order by 1,2
 
-
 --Countries with Highest Infection Rates:
 --Identifies countries with the highest infection rates relative to their populations.
 
@@ -49,7 +48,6 @@ From [PortfolioProject]..CovidDeaths$
 --Where location like '%states%'
 Group by Location, Population
 order by PercentPopulationInfected desc
-
 
 --Countries with Highest Death Count per Population
 --Lists countries with the highest total death counts, considering their populations.
@@ -60,7 +58,6 @@ From [PortfolioProject]..CovidDeaths$
 Where continent is not null 
 Group by Location
 order by TotalDeathCount desc
-
 
 --Breakdown by Continent:
 
@@ -82,7 +79,6 @@ From [PortfolioProject]..CovidDeaths$
 where continent is not null 
 --Group By date
 order by 1,2
-
 
 -- Total Population vs Vaccinations
 -- Examines the relationship between total population and new vaccinations, calculating the rolling sum of vaccinated individuals over time for each location. 
@@ -145,7 +141,6 @@ Join PortfolioProject..CovidVaccinations$ vac
 
 Select *, (RollingPeopleVaccinated/Population)*100
 From #PercentPopulationVaccinated
-
 
 --Creating View for Storing Vaccination Data:
 --Creates a view named PercentPopulationVaccinated to store vaccination data for future visualizations.
